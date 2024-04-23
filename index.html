@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Graphing Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+</head>
+<body>
+    <div id="app">
+        <input v-model="input" @input="calculate" placeholder="Enter your expression">
+        <p>Result: {{ result }}</p>
+        <input v-model="debuggindk" @input="debugg" placeholder="i dont know man">
+        <p>{{logg}}</p>
+    </div>
+
+    <script src="renderer.js"></script>
+</body>
+</html>
